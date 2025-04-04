@@ -17,10 +17,21 @@ header h1 {
   margin: 0;
 }
 
+nav {
+  margin-top: 0.5rem;
+}
+
 nav a {
+  display: inline-block;
   color: white;
   text-decoration: none;
   margin-right: 1rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+nav a:hover {
+  background: #0066cc;
 }
 
 main {
@@ -39,4 +50,11 @@ footer {
   text-align: center;
   padding: 1rem;
   background: #eee;
+}
+
+@media screen and (max-width: 600px) {
+  nav a {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
 }
