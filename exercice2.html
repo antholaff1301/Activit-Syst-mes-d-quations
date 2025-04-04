@@ -17,25 +17,38 @@
 
 <main>
   <div class="card enonce">
-    <p>Énoncé :<br><br>Lorsqu’on vide un réservoir d’une capacité de 200 litres, la quantité d’eau restante () dépend du nombre de minutes de pompage ().<br><br>Sachant que nous connaissons deux moments précis, soit  et , représente-moi graphiquement la situation à l’aide d’un programme Python.</p>
+    
+Lorsqu’on vide un réservoir d’une capacité de 200 litres, la quantité d’eau restante (<em>y</em>) dépend du nombre de minutes de pompage (<em>x</em>).<br>
+<i>Sachant que nous connaissons deux moments précis, soit (15, 80) et (25, 0), représente-moi graphiquement la situation à l’aide d’un programme Python.</i>
+
   </div>
 
   <div class="card">
-    <iframe src="https://trinket.io/embed/python3" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    <iframe src="https://trinket.io/embed/python3" width="100%" height="420" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
     <details>
       <summary>Indice : par où commencer ?</summary>
-      <p>Lis bien l’énoncé. Essaie de construire une fonction affine ou un système en identifiant les constantes et les variables.</p>
+      <p>Identifie les quantités données et le lien entre elles (modèle de fonction ou système).</p>
     </details>
 
     <details>
       <summary>Indice : erreurs possibles</summary>
-      <p>Vérifie les parenthèses, les chaînes de caractères, et le nom des variables dans Python.</p>
+      <p>Parenthèses, noms de variables, syntaxe Python (<code>print</code>, <code>input</code>, etc.).</p>
     </details>
 
     <details>
       <summary>Solution</summary>
-      <p>(À compléter avec une solution plus tard...)</p>
+      <pre>from matplotlib import pyplot as plt
+
+x = [15, 25]
+y = [80, 0]
+
+plt.plot(x, y, marker='o')
+plt.xlabel("Temps (minutes)")
+plt.ylabel("Quantité d'eau (litres)")
+plt.title("Vidange du réservoir")
+plt.grid()
+plt.show()</pre>
     </details>
   </div>
 

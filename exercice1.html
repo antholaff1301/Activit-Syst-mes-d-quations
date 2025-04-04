@@ -17,25 +17,32 @@
 
 <main>
   <div class="card enonce">
-    <p>Énoncé :<br><br>Une famille veut avoir recours aux services d’un électricien et aimerait connaître le tarif (y) associé au nombre d’heures (x).<br><br>Pour une réparation, le tarif d’un électricien est de 32,50$/h. De plus, il demande 50$ en frais pour le déplacement jusqu’au lieu de la réparation.<br><br>Fais imprimer à Python la fonction affine qui décrit cette situation. (« La règle de la fonction est y=…. »).<br><br>Fais imprimer une table de valeurs en prenant en entrée 5 valeurs de .</p>
+    
+Une famille veut avoir recours aux services d’un électricien. Il demande <strong>32,50&nbsp;$/h</strong> + <strong>50&nbsp;$</strong> de déplacement.<br>
+Fais imprimer à Python la fonction affine qui décrit cette situation sous la forme : <br><code>La règle de la fonction est y = 32.5x + 50</code><br>
+Puis, fais imprimer une table de 5 valeurs pour différentes heures (ex. 1 à 5).
+
   </div>
 
   <div class="card">
-    <iframe src="https://trinket.io/embed/python3" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    <iframe src="https://trinket.io/embed/python3" width="100%" height="420" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
     <details>
       <summary>Indice : par où commencer ?</summary>
-      <p>Lis bien l’énoncé. Essaie de construire une fonction affine ou un système en identifiant les constantes et les variables.</p>
+      <p>Identifie les quantités données et le lien entre elles (modèle de fonction ou système).</p>
     </details>
 
     <details>
       <summary>Indice : erreurs possibles</summary>
-      <p>Vérifie les parenthèses, les chaînes de caractères, et le nom des variables dans Python.</p>
+      <p>Parenthèses, noms de variables, syntaxe Python (<code>print</code>, <code>input</code>, etc.).</p>
     </details>
 
     <details>
       <summary>Solution</summary>
-      <p>(À compléter avec une solution plus tard...)</p>
+      <pre>print("La règle de la fonction est y = 32.5x + 50")
+for x in range(1, 6):
+    y = 32.5 * x + 50
+    print(f"x = {x}, y = {y}")</pre>
     </details>
   </div>
 

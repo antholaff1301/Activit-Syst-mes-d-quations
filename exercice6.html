@@ -17,25 +17,37 @@
 
 <main>
   <div class="card enonce">
-    <p>Énoncé :<br><br>L’école secondaire du quartier compte 941 élèves au total. Il y a 75 filles de plus que de garçons.<br><br>Fais imprimer à Python les deux équations présentes dans l’énoncé.<br><br>Fais imprimer à Python la solution au système d’équations.</p>
+    
+Il y a 941 élèves. Il y a 75 filles de plus que de garçons.<br>
+Soit <code>x</code> = nb de garçons, <code>y</code> = nb de filles.<br>
+a) Imprime les deux équations.<br>
+b) Résous le système.
+
   </div>
 
   <div class="card">
-    <iframe src="https://trinket.io/embed/python3" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    <iframe src="https://trinket.io/embed/python3" width="100%" height="420" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
     <details>
       <summary>Indice : par où commencer ?</summary>
-      <p>Lis bien l’énoncé. Essaie de construire une fonction affine ou un système en identifiant les constantes et les variables.</p>
+      <p>Identifie les quantités données et le lien entre elles (modèle de fonction ou système).</p>
     </details>
 
     <details>
       <summary>Indice : erreurs possibles</summary>
-      <p>Vérifie les parenthèses, les chaînes de caractères, et le nom des variables dans Python.</p>
+      <p>Parenthèses, noms de variables, syntaxe Python (<code>print</code>, <code>input</code>, etc.).</p>
     </details>
 
     <details>
       <summary>Solution</summary>
-      <p>(À compléter avec une solution plus tard...)</p>
+      <pre>from sympy import symbols, Eq, solve
+
+x, y = symbols('x y')
+eq1 = Eq(x + y, 941)
+eq2 = Eq(y, x + 75)
+
+sol = solve((eq1, eq2), (x, y))
+print(sol)</pre>
     </details>
   </div>
 

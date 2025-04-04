@@ -17,25 +17,37 @@
 
 <main>
   <div class="card enonce">
-    <p>Énoncé :<br><br>Pour louer un canot au lac municipal, on doit payer un montant fixe de 25$ pour la journée, auquel on ajoute 4,75$ par heure d’utilisation. On s’intéresse à la relation qui existe entre le nombre d’heures d’utilisation et le coût total de la location.<br><br>Fais imprimer à Python le nombres d’heures associé à un canot loué si la location a coûté 58,25$.<br><br>Fais imprimer à Python le coût de la location d’un canot pour 13,5 heures.</p>
+    
+Pour louer un canot, on paie <strong>25&nbsp;$</strong> + <strong>4,75&nbsp;$/h</strong>.<br>
+a) Fais imprimer à Python le nombre d’heures associées si le coût est 58,25&nbsp;$.<br>
+b) Fais imprimer le coût pour 13,5 h.
+
   </div>
 
   <div class="card">
-    <iframe src="https://trinket.io/embed/python3" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    <iframe src="https://trinket.io/embed/python3" width="100%" height="420" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
     <details>
       <summary>Indice : par où commencer ?</summary>
-      <p>Lis bien l’énoncé. Essaie de construire une fonction affine ou un système en identifiant les constantes et les variables.</p>
+      <p>Identifie les quantités données et le lien entre elles (modèle de fonction ou système).</p>
     </details>
 
     <details>
       <summary>Indice : erreurs possibles</summary>
-      <p>Vérifie les parenthèses, les chaînes de caractères, et le nom des variables dans Python.</p>
+      <p>Parenthèses, noms de variables, syntaxe Python (<code>print</code>, <code>input</code>, etc.).</p>
     </details>
 
     <details>
       <summary>Solution</summary>
-      <p>(À compléter avec une solution plus tard...)</p>
+      <pre># a)
+y = 58.25
+x = (y - 25) / 4.75
+print(f"Nombre d'heures : {x}")
+
+# b)
+x2 = 13.5
+y2 = 25 + 4.75 * x2
+print(f"Coût pour 13.5 h : {y2}")</pre>
     </details>
   </div>
 
