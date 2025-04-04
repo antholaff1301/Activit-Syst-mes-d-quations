@@ -4,7 +4,7 @@
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background: #f0f2f5;
+  background: #f9f9fb;
   color: #222;
 }
 
@@ -54,9 +54,35 @@ main {
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
 
+.enonce {
+  background: #d9ecf2;
+  border-left: 6px solid #3498db;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+details summary {
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+
+details {
+  margin-bottom: 1rem;
+  background: #f0f0f0;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
 footer {
   text-align: center;
   padding: 2rem;
   font-size: 0.9rem;
   color: #888;
+}
+
+nav.bottom-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
 }
